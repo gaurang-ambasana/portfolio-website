@@ -22,11 +22,7 @@ const Intro = () => {
             A geek &amp; techie by heart 💚
             <br />
             <br />
-            Enthusiastic Software Developer, passionate about Clean Code &amp;
-            always eager to contribute for team success through quality work by
-            paying attention to every details while executing the work. Always
-            eager to learn something new everyday in Software Engineering.
-            <br />
+            Enthusiastic Software Developer, passionate about Clean Code 💻
             <br />
             And not to mention big fond of Cinema 🎦
           </p>
