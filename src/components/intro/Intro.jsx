@@ -22,7 +22,7 @@ const Intro = () => {
             A geek &amp; techie by heart 💚
             <br />
             <br />
-            Enthusiastic Software Developer, passionate about Clean Code 💻
+            Enthusiastic Software Engineer, passionate about Clean Code 💻
             <br />
             And not to mention big fond of Cinema 🎦
           </p>
