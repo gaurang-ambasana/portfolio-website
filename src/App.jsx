@@ -1,7 +1,12 @@
 import "./App.css";
+import Intro from "./components/intro/Intro";
 
 const App = () => {
-  return <div>Hello World!</div>;
+  return (
+    <>
+      <Intro />
+    </>
+  );
 };
 
 export default App;
