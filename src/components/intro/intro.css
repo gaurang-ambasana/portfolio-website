@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .i {
   display: flex;
   height: 100vh;
@@ -25,7 +21,7 @@ html {
 }
 
 .i-desc {
-  margin-top: 10px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -54,6 +50,7 @@ html {
 
 .i-name {
   font-size: 60px;
+  font-weight: 500;
 }
 
 .i-title {
@@ -63,7 +60,7 @@ html {
 
 .i-title-wrapper {
   height: 100%;
-  animation: move 6s ease-in-out infinite alternate;
+  animation: move 8.5s ease-in-out infinite alternate;
 }
 
 @keyframes move {
