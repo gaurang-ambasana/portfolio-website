@@ -1,4 +1,3 @@
-import React from "react";
 import "./intro.css";
 import Me from "../../img/az3msRjf.png";
 

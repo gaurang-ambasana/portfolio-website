@@ -1,4 +1,3 @@
-import React from "react";
 import "./about.css";
 import aboutBg from "../../img/about-bg.jfif";
 
