@@ -2,8 +2,10 @@ import { createContext, useReducer } from "react";
 
 export const ThemeContext = createContext();
 
+const darkModes = [true, false];
+
 const intialState = {
-  darkMode: true,
+  darkMode: darkModes[Math.floor(Math.random() * darkModes.length)],
 };
 
 const themeReducer = (state, action) => {
