@@ -46,4 +46,6 @@
 .p-name {
   font-weight: 450;
   font-style: oblique;
+  background-color: rgb(226, 223, 223);
+  color: black;
 }
