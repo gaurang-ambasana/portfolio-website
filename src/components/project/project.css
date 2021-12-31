@@ -49,3 +49,14 @@
   background-color: rgb(226, 223, 223);
   color: black;
 }
+
+@media screen and (max-width: 480px) {
+  .project {
+    width: 40%;
+    height: 25vh;
+  }
+
+  .p-name {
+    font-size: small;
+  }
+}
