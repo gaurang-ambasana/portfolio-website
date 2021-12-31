@@ -1,10 +1,22 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import "./contactForm.css";
 import { sendForm } from "emailjs-com";
+import { ThemeContext } from "../../context/context";
 
 const ContactForm = () => {
   const formRef = useRef();
   const [msg, setMsg] = useState("");
+
+  const { state } = useContext(ThemeContext);
+  const { darkMode } = state;
+
+  const inputStyle = {
+    backgroundColor: darkMode && "#333",
+  };
+
+  const msgStyle = {
+    color: darkMode ? "white" : "black",
+  };
 
   const setMsgFor5Sec = (msg) => {
     msg && setMsg(msg);
@@ -38,6 +50,7 @@ const ContactForm = () => {
     <form ref={formRef} onSubmit={submitHandler}>
       <input
         type="text"
+        style={inputStyle}
         autoComplete="off"
         placeholder="Your Name"
         name="username"
@@ -46,6 +59,7 @@ const ContactForm = () => {
       />
       <input
         type="text"
+        style={inputStyle}
         autoComplete="off"
         placeholder="Regarding..."
         name="subject"
@@ -54,6 +68,7 @@ const ContactForm = () => {
       />
       <input
         type="email"
+        style={inputStyle}
         autoComplete="off"
         placeholder="Your Email"
         name="useremail"
@@ -61,6 +76,7 @@ const ContactForm = () => {
         required
       />
       <textarea
+        style={inputStyle}
         rows="5"
         autoComplete="off"
         placeholder="Message if anything"
@@ -68,7 +84,7 @@ const ContactForm = () => {
         required
       />
       <button>Submit</button>
-      <p>{msg}</p>
+      <p style={msgStyle}>{msg}</p>
     </form>
   );
 };
