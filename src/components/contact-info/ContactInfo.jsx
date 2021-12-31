@@ -1,7 +1,6 @@
 import "./contactInfo.css";
 import emailIcon from "../../img/email.png";
 import phoneIcon from "../../img/phone.png";
-import addressIcon from "../../img/address.png";
 import githubIcon from "../../img/github.png";
 import twitterIcon from "../../img/twitter.png";
 import linkedinIcon from "../../img/linkedin.png";
@@ -51,16 +50,6 @@ const ContactInfo = () => {
                 rel="noreferrer"
               >
                 @GaurangAmbasana
-              </a>
-            </div>
-            <div className="c-info-item">
-              <img src={addressIcon} alt="address" className="c-icon" />
-              <a
-                href="https://goo.gl/maps/cjLUHj91eVjYvc3F8"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Rajkot, Gujarat, India
               </a>
             </div>
           </div>
