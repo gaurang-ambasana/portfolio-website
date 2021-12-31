@@ -6,6 +6,7 @@ const ProjectInfo = () => {
   return (
     <div className="pl">
       <h1 className="pl-title">Project Work</h1>
+      <p className="p-desc">More to come soon 😊</p>
       <div className="pl-list">
         {projectData.map((project) => (
           <Project
