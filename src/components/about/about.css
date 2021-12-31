@@ -17,6 +17,30 @@
   flex: 1;
 }
 
+.a-sub {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.skill-list {
+  display: flex;
+}
+
+.s-left,
+.s-right {
+  flex: 1;
+}
+
+.s-item {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.s-img {
+  width: 30px;
+  height: 30px;
+}
+
 .a-card.bg {
   position: absolute;
   top: 50px;
