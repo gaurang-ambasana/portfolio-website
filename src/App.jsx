@@ -10,8 +10,24 @@ const App = () => {
   const { state } = useContext(ThemeContext);
   const { darkMode } = state;
 
+  const lightThemeColor = [
+    "yellow",
+    "pink",
+    "orange",
+    "aqua",
+    "grey",
+    "violet",
+    "white",
+    "greenyellow",
+    "lightgreen",
+    "plum",
+    "wheat",
+  ];
+
   const themeBasedStyle = {
-    backgroundColor: darkMode ? "#222" : "yellow",
+    backgroundColor: darkMode
+      ? "#222"
+      : lightThemeColor[Math.floor(Math.random() * lightThemeColor.length)],
     color: darkMode && "white",
   };
 
