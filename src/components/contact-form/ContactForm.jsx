@@ -16,6 +16,7 @@ const ContactForm = () => {
 
   const msgStyle = {
     color: darkMode ? "white" : "black",
+    marginLeft: "10px",
   };
 
   const setMsgFor5Sec = (msg) => {
