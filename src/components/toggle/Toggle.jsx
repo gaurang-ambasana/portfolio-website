@@ -19,10 +19,10 @@ const Toggle = () => {
   const toggleTheme = () => dispatch(action);
 
   return (
-    <div className="t">
+    <div className="t" onClick={toggleTheme}>
       <img className="t-icon" src={sunIcon} alt="sun" />
       <img className="t-icon" src={moonIcon} alt="moon" />
-      <div className="t-btn" onClick={toggleTheme} style={buttonStyle}></div>
+      <div className="t-btn" style={buttonStyle}></div>
     </div>
   );
 };
