@@ -29,4 +29,10 @@ export const projectData = [
     img: "postman-clone.png",
     link: "https://github.com/gaurang-ambasana/api-tester-cli",
   },
+  {
+    id: 6,
+    name: "Weather App",
+    img: "weather-app.png",
+    link: "https://weather-app-522.netlify.app/",
+  },
 ];
