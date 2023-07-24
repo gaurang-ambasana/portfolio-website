@@ -10,6 +10,7 @@ const Toggle = () => {
 
   const buttonStyle = {
     left: darkMode ? 0 : 25,
+    transition: "0.3s",
   };
 
   const action = {
