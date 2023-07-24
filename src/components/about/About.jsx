@@ -13,11 +13,25 @@ const About = () => {
       </div>
       <div className="a-right">
         <h1 className="a-about">About Me</h1>
-        <p className="a-sub">I'm an Aspiring Full Stack Developer</p>
+        <p className="a-sub">Full Stack Software Developer</p>
+        <p className="a-desc">
+          I hold experience in working service based as well as product based
+          company, I started my career as a Embedded Software Engineer in
+          Febuary 2020 and soon shifted Core Software Development, currently I'm
+          employed as a <strong>Staff Software Engineer</strong> at{" "}
+          <a
+            href="https://www.tailorbird.us/"
+            target="_blank"
+            rel="noopener"
+            title="open company website"
+          >
+            Tailorbird
+          </a>
+          .
+        </p>
         <br />
         <p className="a-desc">
-          Being a Software Engineer, you should believe in forever learning
-          principles. <br /> My area of expertise includes but not limited to
+          My area of expertise includes but not limited to
         </p>
         <br />
         <div className="skill-list">

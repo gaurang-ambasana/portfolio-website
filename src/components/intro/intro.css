@@ -60,24 +60,21 @@
 
 .i-title-wrapper {
   height: 100%;
-  animation: move 10s ease-in-out infinite alternate;
+  animation: move 8s ease-in-out infinite alternate;
 }
 
 @keyframes move {
-  20% {
+  25% {
     transform: translateY(-50px);
   }
-  40% {
+  50% {
     transform: translateY(-100px);
   }
-  60% {
+  75% {
     transform: translateY(-150px);
   }
-  80% {
-    transform: translateY(-200px);
-  }
   100% {
-    transform: translateY(-250px);
+    transform: translateY(-200px);
   }
 }
 
@@ -91,7 +88,9 @@
 }
 
 .i-scroll {
-  width: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 150px;
   height: 30px;
   position: absolute;
   bottom: 20px;

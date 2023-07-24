@@ -1,11 +1,11 @@
 export const skillsLeft = [
   {
-    name: "JavaScript",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    name: "TypeScript",
+    img: "https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png",
   },
   {
-    name: "Python",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    name: "JavaScript",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
     name: "NodeJS",
@@ -19,16 +19,16 @@ export const skillsLeft = [
 
 export const skillsRight = [
   {
-    name: "Express",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    name: "GraphQL",
+    img: "https://seeklogo.com/images/G/graphql-logo-97CBBB6D51-seeklogo.com.png",
   },
   {
-    name: "MongoDB",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    name: "Redux",
+    img: "https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png",
   },
   {
-    name: "Google Cloud",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+    name: "Python",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   {
     name: "Google Apps Script",

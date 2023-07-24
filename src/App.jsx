@@ -7,8 +7,9 @@ import { useContext } from "react";
 import { ThemeContext } from "./context/context";
 
 const App = () => {
-  const { state } = useContext(ThemeContext);
-  const { darkMode } = state;
+  const {
+    state: { darkMode },
+  } = useContext(ThemeContext);
 
   const lightThemeColor = [
     "yellow",
