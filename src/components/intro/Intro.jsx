@@ -90,12 +90,7 @@ const Intro = () => {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        <img
-          src={Me}
-          alt="na"
-          className="i-img"
-          title="Photo under bright sunlight hence dark 😎"
-        />
+        <img src={Me} alt="na" className="i-img" />
       </div>
     </div>
   );
