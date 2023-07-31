@@ -1,7 +1,46 @@
 import "./intro.css";
-import Me from "../../img/20003913-removebg-preview.png";
+import Batman from "../../img/20003913-removebg-preview.png";
+import Superman from "../../img/superman-5392758_1280.webp";
+import Spiderman from "../../img/spiderman-7810368_1280.png";
+import Ironman from "../../img/iron-man-5471434_1280.png";
+import CaptainAmerica from "../../img/captain-america-6563214_1280.png";
+import Deadpool from "../../img/deadpool-5783526_1280-removebg-preview.png";
+import Hulk from "../../img/hulk-5959620_1280.png";
+import Thor from "../../img/thor-6192858_1280.webp";
+import { useEffect, useState } from "react";
 
 const Intro = () => {
+  const [imgRotateAngle, setImgRotateAngle] = useState("0deg");
+  const [imgLink, setImgLink] = useState(Batman);
+
+  useEffect(() => {
+    const imgLinks = [
+      Batman,
+      CaptainAmerica,
+      Deadpool,
+      Hulk,
+      Ironman,
+      Spiderman,
+      Superman,
+      Thor,
+    ];
+
+    let i = 1;
+
+    const effectTimer = setInterval(() => {
+      const flag = i % 2;
+      setImgRotateAngle(`${flag ? -5 : 5}deg`);
+      setImgLink(imgLinks[i]);
+      i++;
+
+      if (i === imgLinks.length) {
+        i = 0;
+      }
+    }, 2000);
+
+    return () => clearInterval(effectTimer);
+  }, []);
+
   return (
     <div className="i">
       <div className="i-left">
@@ -10,8 +49,8 @@ const Intro = () => {
           <h1 className="i-name">Gaurang 😎</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Normal Human Being</div>
               <div className="i-title-item">Software Engineer</div>
+              <div className="i-title-item">Serial Eater 🍔</div>
               <div className="i-title-item">Cinephile 🎥</div>
               <div className="i-title-item">Gamer 🎮</div>
               <div className="i-title-item">Car Freak 🏎</div>
@@ -90,7 +129,12 @@ const Intro = () => {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        <img src={Me} alt="na" className="i-img" />
+        <img
+          src={imgLink}
+          alt="na"
+          className="i-img"
+          style={{ rotate: imgRotateAngle }}
+        />
       </div>
     </div>
   );

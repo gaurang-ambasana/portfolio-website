@@ -31,6 +31,7 @@
   width: 100%;
   object-fit: contain;
   position: absolute;
+  transition: linear 0.4s;
 }
 
 .i-bg {
