@@ -41,6 +41,14 @@ const Intro = () => {
     return () => clearInterval(effectTimer);
   }, []);
 
+  const titles = [
+    "Software Engineer",
+    "Gamer 🎮",
+    "Serial Eater 🍔",
+    "Cinephile 🎥",
+    "Car Freak 🏎",
+  ];
+
   return (
     <div className="i">
       <div className="i-left">
@@ -49,11 +57,11 @@ const Intro = () => {
           <h1 className="i-name">Gaurang 😎</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Software Engineer</div>
-              <div className="i-title-item">Serial Eater 🍔</div>
-              <div className="i-title-item">Cinephile 🎥</div>
-              <div className="i-title-item">Gamer 🎮</div>
-              <div className="i-title-item">Car Freak 🏎</div>
+              {titles.map((t, i) => (
+                <div className="i-title-item" key={`${i}-${t}`}>
+                  {t}
+                </div>
+              ))}
             </div>
           </div>
           <p className="i-desc">
