@@ -29,13 +29,11 @@ const Intro = () => {
 
     const effectTimer = setInterval(() => {
       const flag = i % 2;
-      setImgRotateAngle(`${flag ? -5 : 5}deg`);
       setImgLink(imgLinks[i]);
+      setImgRotateAngle(`${flag ? -5 : 5}deg`);
       i++;
 
-      if (i === imgLinks.length) {
-        i = 0;
-      }
+      if (i === imgLinks.length) i = 0;
     }, 2000);
 
     return () => clearInterval(effectTimer);
