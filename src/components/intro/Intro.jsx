@@ -30,10 +30,9 @@ const Intro = () => {
     let i = 1;
 
     const effectTimer = setInterval(() => {
-      const flag = i % 2;
+      const flag = i++ % 2;
       setImgLink(imgLinks[i]);
       setImgRotateAngle(`${flag ? -3 : 3}deg`);
-      i++;
 
       if (i === imgLinks.length) i = 0;
     }, 2000);
