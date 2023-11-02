@@ -22,7 +22,7 @@ const About = () => {
           <a
             href="https://www.tailorbird.us/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             title="open company website"
           >
             Tailorbird
