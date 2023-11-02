@@ -6,7 +6,8 @@ import Ironman from "../../img/iron-man-5471434_1280.png";
 import CaptainAmerica from "../../img/captain-america-6563214_1280.png";
 import Deadpool from "../../img/deadpool-5783526_1280-removebg-preview.png";
 import Hulk from "../../img/hulk-5959620_1280.png";
-import Thor from "../../img/thor-6192858_1280.webp";
+import Bayek from "../../img/bayek.png";
+import Kratos from "../../img/kratos.png";
 import { useEffect, useState } from "react";
 
 const Intro = () => {
@@ -16,13 +17,14 @@ const Intro = () => {
   useEffect(() => {
     const imgLinks = [
       Batman,
+      Bayek,
       CaptainAmerica,
       Deadpool,
       Hulk,
       Ironman,
       Spiderman,
       Superman,
-      Thor,
+      Kratos,
     ];
 
     let i = 1;
@@ -30,7 +32,7 @@ const Intro = () => {
     const effectTimer = setInterval(() => {
       const flag = i % 2;
       setImgLink(imgLinks[i]);
-      setImgRotateAngle(`${flag ? -5 : 5}deg`);
+      setImgRotateAngle(`${flag ? -3 : 3}deg`);
       i++;
 
       if (i === imgLinks.length) i = 0;
