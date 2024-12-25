@@ -23,6 +23,18 @@ const App = () => {
     "lightgreen",
     "plum",
     "wheat",
+    "lightblue",
+    "lightcoral",
+    "lightcyan",
+    "lightgoldenrodyellow",
+    "lightgray",
+    "lightpink",
+    "lightsalmon",
+    "lightseagreen",
+    "lightskyblue",
+    "lightslategray",
+    "lightsteelblue",
+    "lightyellow",
   ];
 
   const themeBasedStyle = {
