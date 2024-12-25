@@ -68,6 +68,7 @@ const ContactInfo = () => {
       link: "https://www.facebook.com/gaurang.ambasana/",
     },
   ];
+
   return (
     <div className="c" style={{ height: "auto" }}>
       <div className="c-bg"></div>
@@ -75,8 +76,8 @@ const ContactInfo = () => {
         <div className="c-left">
           <h1 className="c-title">Let's discuss over a Coffee 🥤</h1>
           <div className="c-info">
-            {infoDetails.map((data) => (
-              <InfoItem {...data} />
+            {infoDetails.map((data, i) => (
+              <InfoItem {...data} key={i} />
             ))}
           </div>
         </div>
